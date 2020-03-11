@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Web-Css</title>
+        <meta charset='utf-8'>
+        <style>
+            h1{
+                font-size:100px;
+            }
+            body{
+                font-size:30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">Web</a>
+            </h1>
+        </header>   
+        <nav>
+
+        
+            <ol>
+                <li><a href="1.html">html</a></li>
+                <li><a href="2.html">css</a></li>
+                <li><a href="2.html">javascript</a></li>
+            </ol>
+        </nav>
+        <article>
+            <script>
+                var bodyTag = document.querySelector('body');
+                var as = document.querySelectorAll('a');
+            </script>
+
+        <input type="button" value="night" onclick="
+        alert('밤이네?');
+        bodyTag.style.color='white';
+        bodyTag.style.backgroundColor='black'
+        ;">
+
+       
+        <input type="button" value="day" onclick="
+        alert('낮이네?');
+        bodyTag.style.color='black';
+        bodyTag.style.backgroundColor='white';
+        ;">
+
+        <input type="button" value="night" onclick="
+        
+        if(this.value === 'night'){
+            bodyTag.style.color='white';
+            bodyTag.style.backgroundColor='black';
+            this.value = 'day';
+
+            var i = 0;
+                    while(i<as.length){
+                    as[i].style.color='white';
+                    i = i+1;
+                    }
+
+        }else{
+            bodyTag.style.color='black';
+            bodyTag.style.backgroundColor='white';
+            this.value = 'night';
+
+            var i = 0;
+                    while(i<as.length){
+                    as[i].style.color='black';
+                    i = i+1;
+                    }
+        }
+        
+
+    
+    
+      
+
+        
+        ">
+        
+
+            <h2>css</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit voluptates officiis eaque, voluptatibus a quas eum impedit esse! Reiciendis dolorum eligendi asperiores deleniti iusto dignissimos veniam laborum ut veritatis!
+        </article>
+    </body>
+
+</html>
