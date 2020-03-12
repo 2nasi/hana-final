@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+        <script>
+            function randomGeneratorForArray(length){
+                return Math.floor(Math.random()*length);
+            }
+        </script>
+    </head>
+    <body onclick="
+    var colors = ['red','blue','green','yellow','orange']
+        this.style.backgroundColor = colors[randomGeneratorForArray(colors.length)];
+        this.style.color = 'white';">
+        <style>
+            
+            h1{
+                border:5px solid red;
+                padding-top :5px;
+                margin:50px;
+                display:inline;
+
+            }
+            a{
+                display:block;
+            }
+            body{
+                font-family: 'Lobster', cursive;
+            }
+
+        </style>
+        <h1>
+            BOX1
+        </h1>
+        <h1>
+            BOX2
+        </h1>
+        
+        Lorem<a href="http://w3c.org"> ipsum </a>dolor sit amet consectetur, adipisicing elit. Neque, unde rerum illum officiis voluptate sapiente perspiciatis repellendus odio dolores praesentium et saepe quia eum expedita, corporis perferendis nesciunt dolore iure.
+    </body>
+</html>
